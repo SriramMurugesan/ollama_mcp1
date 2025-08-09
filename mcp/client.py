@@ -1,4 +1,3 @@
-# mcp/client.py
 import json
 import re
 
@@ -39,9 +38,7 @@ class MCPClient:
         return None
 
     def call_tool(self, tool_request):
-        """
-        Simulate tool execution with better response
-        """
+       
         tool = tool_request["tool"]
         config = self.tools.get(tool, {})
         

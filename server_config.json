@@ -3,7 +3,7 @@
       "ollama": {
         "api_url": "http://49.13.101.239:11434/api/chat",
         "model": "openhermes:v2.5",
-        "api_key": "sk-2f5b41da8cdb4eea970c5a2059d12ada"
+        "api_key": "OLLAMA_API_KEY"
       },
       "tools": {
         "hubspot-mcp": {
@@ -13,7 +13,7 @@
             "@hubspot/mcp-server"
           ],
           "env": {
-            "PRIVATE_APP_ACCESS_TOKEN": "pat-na2-a04be352-5fbd-4221-a041-8030ab568cd0"
+            "PRIVATE_APP_ACCESS_TOKEN": "HUBSPOT_PRIVATE_APP_TOKEN"
           }
         }
       }

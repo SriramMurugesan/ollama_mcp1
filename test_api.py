@@ -1,12 +1,8 @@
-#!/usr/bin/env python3
-"""
-Test script to verify the Ollama MCP setup
-"""
+
 import requests
 import json
 
 def test_ollama_api():
-    """Test the Ollama API connection"""
     url = "http://49.13.101.239:11434/api/chat"
     headers = {"Content-Type": "application/json"}
     payload = {
@@ -32,7 +28,6 @@ def test_ollama_api():
         return False
 
 def test_local_server():
-    """Test the local FastAPI server"""
     url = "http://localhost:8000/health"
     try:
         response = requests.get(url, timeout=10)
